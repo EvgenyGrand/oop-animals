@@ -30,16 +30,26 @@ public class Animal {
     }
 
     public String old() {
-        String old = "";
-        if (age == 1){
-            old = "год";
-        }else if (age >= 2 && age < 5) {
-            old = "года";
-        } else if (age >= 5) {
-           old = "лет";
+        String old = null;
+        try {
+            old = "";
+            if (age == 1){
+                old = "год";
+            }else if (age >= 2 && age < 5) {
+                old = "года";
+            } else if (age >= 5 && age < 21) {
+                old = "лет";
+            }else{
+                old = "(Некорректный возраст ,введите другое число)";
+            }
+        } catch (Exception e) {
+            System.out.println("Некорректное значение ,введите другой возраст");
+            e.printStackTrace();
         }
         return old;
     }
+
+
 
 
     @Override
