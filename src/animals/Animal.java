@@ -32,7 +32,6 @@ public class Animal {
     public String old() {
         String old = null;
         try {
-            old = "";
             if (age == 1){
                 old =" мне " + age + " год";
             }else if (age >= 2 && age < 5) {
