@@ -34,11 +34,11 @@ public class Animal {
         try {
             old = "";
             if (age == 1){
-                old = "год";
+                old =" мне " + age + " год";
             }else if (age >= 2 && age < 5) {
-                old = "года";
+                old = " мне " + age + " года";
             } else if (age >= 5 && age < 21) {
-                old = "лет";
+                old = " мне " + age + " лет";
             }else{
                 old = "(Некорректный возраст ,введите другое число)";
             }
@@ -54,7 +54,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        System.out.println ("Привет! " + "меня зовут " + name + ", мне " + age + " " + old() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
+        System.out.println ("Привет! " + "меня зовут " + name + "," + old() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
         return null;
     }
 
