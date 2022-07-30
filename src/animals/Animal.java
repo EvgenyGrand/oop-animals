@@ -17,7 +17,7 @@ public class Animal {
         System.out.println("Я говорю");
     }
 
-     public void go() {
+    public void go() {
         System.out.println("Я иду");
     }
 
@@ -29,9 +29,22 @@ public class Animal {
         System.out.println("Я ем");
     }
 
+    public String old() {
+        String old = "";
+        if (age == 1){
+            old = "год";
+        }else if (age >= 2 && age < 5) {
+            old = "года";
+        } else if (age >= 5) {
+           old = "лет";
+        }
+        return old;
+    }
+
+
     @Override
     public String toString() {
-        System.out.println ("Привет! " + "меня зовут " + name + ", мне " + age + " лет, " + "я вешу - " + weight + " кг," + " мой цвет - " + color);
+        System.out.println ("Привет! " + "меня зовут " + name + ", мне " + age + " " + old() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
         return null;
     }
 
