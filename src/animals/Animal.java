@@ -1,16 +1,19 @@
 package animals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Animal {
-    private final String name;
-    private final int age;
-    private final int weight;
-    private final String color;
+    private final String NAME;
+    private final int AGE;
+    private final int WEIGHT;
+    private final String COLOR;
 
     protected Animal(String name, int age, int weight, String color) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-        this.color = color;
+        this.NAME = name;
+        this.AGE = age;
+        this.WEIGHT = weight;
+        this.COLOR = color;
     }
 
     public void say() {
@@ -32,12 +35,12 @@ public class Animal {
     public String old() {
         String old = null;
         try {
-            if (age == 1){
-                old =" мне " + age + " год";
-            }else if (age >= 2 && age < 5) {
-                old = " мне " + age + " года";
-            } else if (age >= 5 && age < 21) {
-                old = " мне " + age + " лет";
+            if (AGE == 1){
+                old =" мне " + AGE + " год";
+            }else if (AGE >= 2 && AGE < 5) {
+                old = " мне " + AGE + " года";
+            } else if (AGE >= 5 && AGE < 21) {
+                old = " мне " + AGE + " лет";
             }else{
                 old = "(Некорректный возраст, введите другое число)";
             }
@@ -53,9 +56,10 @@ public class Animal {
 
     @Override
     public String toString() {
-        System.out.println ("Привет! " + "меня зовут " + name + "," + old() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
+        System.out.println ("Привет! " + "меня зовут " + NAME + "," + old() + ", я вешу - " + WEIGHT + " кг," + " мой цвет - " + COLOR);
         return null;
     }
+
 
 }
 
