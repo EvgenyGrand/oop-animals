@@ -16,6 +16,7 @@ public class Start {
 
         cat.drink();
         duck.fly();
+        dog.old();
         dog.toString();
     }
 
