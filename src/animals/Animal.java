@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Animal {
-    protected final String name;
-    protected final int age;
-    protected final int weight;
-    protected final String color;
+    private final String name;
+    private final int age;
+    private final int weight;
+    private final String color;
 
     protected Animal(String name, int age, int weight, String color) {
         this.name = name;
