@@ -1,6 +1,6 @@
 package animals;
 
-public interface Flying {
+public interface IFlying {
     public void fly();
 
 
