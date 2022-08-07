@@ -60,6 +60,5 @@ public class Animal {
         return null;
     }
 
-
 }
 
