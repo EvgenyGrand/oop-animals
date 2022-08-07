@@ -12,15 +12,6 @@ public class Start {
         Dog dog = new Dog("Барбос", 5, 15, "Рыжий");
         Duck duck = new Duck("Велизарий", 1, 3, "Пестрый");
 
-        ArrayList<Animal>Animal = new ArrayList<>();
-        Cat Barsik = new Cat("Барсик",3,5,"Черный");
-        Dog Barbos = new Dog("Барбос", 5,15, "Рыжий");
-        Duck Velizarii = new Duck("Велизарий",1,3,"Пестрый");
-        Animal.add(Barsik);
-        Animal.add(Barbos);
-        Animal.add(Velizarii);
-
-
 
         cat.drink();
         duck.fly();
