@@ -9,6 +9,8 @@ public class Animal {
     private final int weight;
     private final String color;
 
+
+
     protected Animal(String name, int age, int weight, String color) {
         this.name = name;
         this.age = age;
@@ -51,14 +53,10 @@ public class Animal {
         return old;
     }
 
-
-
-
     @Override
     public String toString() {
         System.out.println ("Привет! " + "меня зовут " + name + "," + old() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
         return null;
     }
-
 }
 

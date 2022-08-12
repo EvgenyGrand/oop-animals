@@ -1,9 +1,13 @@
 package animals;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Start {
+
+
+    public Start() {
+    }
+
     public static void main(String[] args) {
 
 
@@ -13,12 +17,28 @@ public class Start {
         Duck duck = new Duck("Велизарий", 1, 3, "Пестрый");
 
 
-        cat.drink();
-        duck.fly();
-        dog.toString();
+        ArrayList<Animal> Animal = new ArrayList<>();
+
+
+
+        Animal.add(cat);
+        Animal.add(dog);
+        Animal.add(duck);
+
+
+        WhyAnimals(Animal);
     }
 
-}
+    public static void WhyAnimals(ArrayList<Animal>Animals){
+        for (Animal element : Animals){
+            element.toString();
+        }
+    }
+
+    }
+    
+
+
 
 
 
