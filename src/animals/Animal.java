@@ -18,6 +18,22 @@ public class Animal {
         this.color = color;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
     public void say() {
         System.out.println("Я говорю");
     }
