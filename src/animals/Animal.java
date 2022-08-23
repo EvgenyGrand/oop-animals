@@ -72,7 +72,7 @@ public abstract class Animal {
     @Override
     public String toString() {
         System.out.println ("Привет! " + "меня зовут " + name + "," + old() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
-        return null;
+        return "";
     }
 }
 
