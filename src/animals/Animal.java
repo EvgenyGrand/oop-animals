@@ -3,7 +3,7 @@ package animals;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Animal {
+public abstract class Animal {
     private final String name;
     private final int age;
     private final int weight;
