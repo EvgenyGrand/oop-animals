@@ -14,6 +14,8 @@ public class Start {
         Scanner sc = new Scanner(System.in);
         Scanner comm = new Scanner(System.in);
 
+
+
         while (true) {
             System.out.println("Enter command : ");
             Command selection = Command.valueOf(comm.next().trim().toUpperCase());
@@ -73,8 +75,6 @@ public class Start {
                 case EXIT:
                     System.out.println("Выход из программы");
                     System.exit(0);
-                default:
-                    System.out.println("Wrong command, try again");
 
 
             }
