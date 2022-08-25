@@ -2,12 +2,15 @@ package animals;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public abstract class Animal {
     private final String name;
     private final int age;
     private final int weight;
     private final String color;
+
+    Scanner sc = new Scanner(System.in);
 
 
     protected Animal(String name, int age, int weight, String color) {
@@ -74,6 +77,8 @@ public abstract class Animal {
 
 
     }
+
+
 }
 
 

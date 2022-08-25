@@ -9,16 +9,16 @@ public class Start {
     public static void main(String[] args) {
 
 
+
         ArrayList<Animal> Animals = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
-        Scanner comm = new Scanner(System.in);
 
 
 
         while (true) {
             System.out.println("Enter command : ");
-            Command selection = Command.valueOf(comm.next().trim().toUpperCase());
+            Command selection = Command.valueOf(sc.next().trim().toUpperCase());
 
             switch (selection) {
                 case ADD:
@@ -35,7 +35,7 @@ public class Start {
                         int weight = sc.nextInt();
                         System.out.println("Введите цвет");
                         String color = sc.next();
-                        Cat cat = new Cat(name, age, weight, color);
+                        Cat cat = new Cat(name, age,weight,color);
                         Animals.add(cat);
                         cat.say();
 
@@ -78,6 +78,7 @@ public class Start {
 
 
             }
+
         }
 
 
