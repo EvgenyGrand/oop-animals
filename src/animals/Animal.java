@@ -4,13 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public abstract class Animal {
+
+public  class Animal {
     private final String name;
     private final int age;
     private final int weight;
     private final String color;
 
     Scanner sc = new Scanner(System.in);
+    ArrayList<Animal> Animals = new ArrayList<>();
+
+
 
 
     protected Animal(String name, int age, int weight, String color) {
@@ -75,10 +79,24 @@ public abstract class Animal {
     public String toString() {
         return ("Привет! " + "меня зовут " + name + "," + old() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
 
+    }
+    public void addAnimal(){
+        System.out.println("Введите имя");
+        String name = sc.next();
+        System.out.println("Введите возраст");
+        int age = sc.nextInt();
+        System.out.println("Введите вес");
+        int weight = sc.nextInt();
+        System.out.println("Введите цвет");
+        String color = sc.next();
+        Animal animal = new Animal(name, age, weight, color);
+        Animals.add(animal);
+        animal.say();
 
     }
 
 
-}
+   }
+
 
 

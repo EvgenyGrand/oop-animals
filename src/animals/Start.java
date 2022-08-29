@@ -9,11 +9,9 @@ public class Start {
     public static void main(String[] args) {
 
 
-
         ArrayList<Animal> Animals = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
-
 
 
         while (true) {
@@ -27,6 +25,8 @@ public class Start {
 
 
                     if (animalType.equals("cat")) {
+
+
                         System.out.println("Введите имя");
                         String name = sc.next();
                         System.out.println("Введите возраст");
