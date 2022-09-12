@@ -9,7 +9,7 @@ public class Start {
     public static void main(String[] args) {
 
 
-        ArrayList<Animal> Animals = new ArrayList<>();
+        ArrayList<Animal>animals = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
 
@@ -26,7 +26,6 @@ public class Start {
 
                     if (animalType.equals("cat")) {
 
-
                         System.out.println("Введите имя");
                         String name = sc.next();
                         System.out.println("Введите возраст");
@@ -35,8 +34,8 @@ public class Start {
                         int weight = sc.nextInt();
                         System.out.println("Введите цвет");
                         String color = sc.next();
-                        Cat cat = new Cat(name, age,weight,color);
-                        Animals.add(cat);
+                        Cat cat = new Cat(name, age, weight, color);
+                        animals.add(cat);
                         cat.say();
 
                     } else if (animalType.equals("dog")) {
@@ -49,7 +48,7 @@ public class Start {
                         System.out.println("Введите цвет");
                         String color = sc.next();
                         Dog dog = new Dog(name, age, weight, color);
-                        Animals.add(dog);
+                        animals.add(dog);
                         dog.say();
 
                     } else if (animalType.equals("duck")) {
@@ -62,13 +61,13 @@ public class Start {
                         System.out.println("Введите цвет");
                         String color = sc.next();
                         Duck duck = new Duck(name, age, weight, color);
-                        Animals.add(duck);
+                        animals.add(duck);
                         duck.say();
 
                     }
                     break;
                 case LIST:
-                    for (Animal animal : Animals) {
+                    for (Animal animal : animals) {
                         System.out.println(animal);
                     }
                     break;
@@ -76,29 +75,7 @@ public class Start {
                     System.out.println("Выход из программы");
                     System.exit(0);
 
-
             }
-
         }
-
-
     }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
