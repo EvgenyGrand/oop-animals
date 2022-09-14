@@ -54,7 +54,7 @@ public abstract class Animal {
 
     public String validationAge() {
         String old = null;
-        try {
+
             if (age == 1) {
                 old = " мне " + age + " год";
             } else if (age >= 2 && age < 5) {
@@ -64,10 +64,7 @@ public abstract class Animal {
             } else {
                 old = "(Некорректный возраст, введите другое число)";
             }
-        } catch (Exception e) {
-            System.out.println("Некорректное значение ,введите другой возраст");
-            e.printStackTrace();
-        }
+
         return old;
     }
 
