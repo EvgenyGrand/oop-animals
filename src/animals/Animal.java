@@ -52,7 +52,7 @@ public abstract class Animal {
         System.out.println("Я ем");
     }
 
-    public String subtitutionAge() {
+    public String validationAge() {
         String old = null;
         try {
             if (age == 1) {
@@ -73,7 +73,7 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return ("Привет! " + "меня зовут " + name + "," + subtitutionAge() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
+        return ("Привет! " + "меня зовут " + name + "," + validationAge() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
 
     }
 
