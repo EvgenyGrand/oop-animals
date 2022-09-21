@@ -71,7 +71,7 @@ public class Start {
                         if (age >1 && age<5) {
                             System.out.println("Возраст введен корректно!");
                         }else{
-                            System.out.println("Возраст введен корректно!, Введите возраст в диапазоне от 1 года до 30 лет");
+                            System.out.println("Возраст введен корректно!, Введите возраст в диапазоне от 1 года до 5 лет");
                             System.exit(0);
                         }
                         System.out.println("Введите вес");
