@@ -30,6 +30,12 @@ public class Start {
                         String name = sc.next();
                         System.out.println("Введите возраст");
                         int age = sc.nextInt();
+                        if (age >1 && age<30) {
+                            System.out.println("Возраст введен корректно!");
+                        }else{
+                            System.out.println("Возраст введен некорректно!, Введите возраст в диапазоне от 1 года до 30 лет");
+                            System.exit(0);
+                        }
                         System.out.println("Введите вес");
                         int weight = sc.nextInt();
                         System.out.println("Введите цвет");
@@ -43,6 +49,12 @@ public class Start {
                         String name = sc.next();
                         System.out.println("Введите возраст");
                         int age = sc.nextInt();
+                        if (age >1 && age<30) {
+                            System.out.println("Возраст введен корректно!");
+                        }else{
+                            System.out.println("Возраст введен некорректно!, Введите возраст в диапазоне от 1 года до 30 лет");
+                            System.exit(0);
+                        }
                         System.out.println("Введите вес");
                         int weight = sc.nextInt();
                         System.out.println("Введите цвет");
@@ -56,6 +68,12 @@ public class Start {
                         String name = sc.next();
                         System.out.println("Введите возраст");
                         int age = sc.nextInt();
+                        if (age >1 && age<5) {
+                            System.out.println("Возраст введен корректно!");
+                        }else{
+                            System.out.println("Возраст введен корректно!, Введите возраст в диапазоне от 1 года до 30 лет");
+                            System.exit(0);
+                        }
                         System.out.println("Введите вес");
                         int weight = sc.nextInt();
                         System.out.println("Введите цвет");

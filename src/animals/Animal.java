@@ -52,7 +52,7 @@ public abstract class Animal {
         System.out.println("Я ем");
     }
 
-    public String validationAge() {
+    public String getPrefix() {
         String old = null;
 
             if (age == 1) {
@@ -61,8 +61,6 @@ public abstract class Animal {
                 old = " мне " + age + " года";
             } else if (age >= 5 && age < 21) {
                 old = " мне " + age + " лет";
-            } else {
-                old = "(Некорректный возраст, введите другое число)";
             }
 
         return old;
@@ -70,7 +68,7 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return ("Привет! " + "меня зовут " + name + "," + validationAge() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
+        return ("Привет! " + "меня зовут " + name + "," + getPrefix() + ", я вешу - " + weight + " кг," + " мой цвет - " + color);
 
     }
 
