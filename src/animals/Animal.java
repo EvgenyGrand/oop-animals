@@ -19,7 +19,6 @@ public abstract class Animal {
         this.color = color;
     }
 
-
     public String getName() {
         return name;
     }
