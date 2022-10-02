@@ -24,7 +24,7 @@ public class Start {
                     animals.add(createAnimal());
                     break;
                 case LIST:
-                    animals.removeAll(Arrays.asList(null,""));
+                    animals.removeAll(Arrays.asList(null, ""));
                     for (Animal animal : animals) {
                         System.out.println(animal);
                     }
@@ -48,14 +48,14 @@ public class Start {
             System.out.println("Введите возраст в диапазоне от 0 до 30 лет!");
             int age = sc.nextInt();
             while (age > 0 && age < 30) {
-                    System.out.println("Возраст введен корректно!");
-                    System.out.println("Введите вес");
-                    int weight = sc.nextInt();
-                    System.out.println("Введите цвет");
-                    String color = sc.next();
-                    Cat cat = new Cat(name, age, weight, color);
-                    cat.say();
-                    return cat;
+                System.out.println("Возраст введен корректно!");
+                System.out.println("Введите вес");
+                int weight = sc.nextInt();
+                System.out.println("Введите цвет");
+                String color = sc.next();
+                Cat cat = new Cat(name, age, weight, color);
+                cat.say();
+                return cat;
 
             }
 
@@ -82,7 +82,7 @@ public class Start {
             System.out.println("Введите возраст в диапазоне от 0 до 5 лет");
             int age = sc.nextInt();
             while (age > 0 && age < 5) {
-                    System.out.println("Возраст введен корректно!");
+                System.out.println("Возраст введен корректно!");
                 System.out.println("Введите вес");
                 int weight = sc.nextInt();
                 System.out.println("Введите цвет");
@@ -93,9 +93,11 @@ public class Start {
             }
         }
         return null;
-    }
 
+
+    }
 }
+
 
 
 
