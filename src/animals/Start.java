@@ -48,7 +48,6 @@ public class Start {
             System.out.println("Введите возраст в диапазоне от 0 до 30 лет!");
             int age = sc.nextInt();
             while (age > 0 && age < 30) {
-//                if (age > 0 && age < 30) {
                     System.out.println("Возраст введен корректно!");
                     System.out.println("Введите вес");
                     int weight = sc.nextInt();
@@ -66,7 +65,6 @@ public class Start {
             System.out.println("Введите возраст в диапазоне от 0 до 30 лет");
             int age = sc.nextInt();
             while (age > 0 && age < 30) {
-//                if (age > 0 && age < 30) {
                 System.out.println("Возраст введен корректно!");
                 System.out.println("Введите вес");
                 int weight = sc.nextInt();
@@ -84,7 +82,6 @@ public class Start {
             System.out.println("Введите возраст в диапазоне от 0 до 5 лет");
             int age = sc.nextInt();
             while (age > 0 && age < 5) {
-//                if (age > 0 && age < 5) {
                     System.out.println("Возраст введен корректно!");
                 System.out.println("Введите вес");
                 int weight = sc.nextInt();
